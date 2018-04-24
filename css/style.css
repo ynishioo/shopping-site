@@ -1,0 +1,263 @@
+html {
+  font-size: 62.5%; }
+
+html, body {
+  background-color: #f9f8f6;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%; }
+
+header .sp_menu_btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 0 0; }
+  header .sp_menu_btn li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+header .sp_menu_li {
+  width: auto;
+  top: 50px;
+  border: none;
+  background: #ff6d77;
+  margin: 0;
+  padding: 0;
+  display: none; }
+  header .sp_menu_li li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    header .sp_menu_li li a {
+      color: #fff;
+      display: block;
+      padding: 10px 8px;
+      border-bottom: 1px solid #fff;
+      font-size: 14px;
+      text-decoration: none; }
+@media (min-width: 551px) {
+  header .sp_menu {
+    display: none; }
+  header .pc_menu {
+    float: right; }
+    header .pc_menu li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 10px;
+      display: inline-block; }
+  header .logo {
+    float: left; }
+  header .container {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 45px; }
+  header .banner {
+    margin: 0 auto; } }
+@media (max-width: 550px) {
+  header .pc_menu {
+    display: none; }
+  header .logo {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px; } }
+
+#wrap {
+  clear: both;
+  position: relative;
+  min-height: 100%; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.main {
+  text-align: center; }
+
+.contents {
+  display: block;
+  width: 75%;
+  float: left;
+  display: inline; }
+  .contents .owl-theme .owl-dots .owl-dot span {
+    width: 25px;
+    height: 2px;
+    margin: 5px 7px;
+    background: #aaa;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px; }
+  .contents .owl-theme .owl-dots .owl-dot.active span {
+    background: #9d1a2d; }
+  .contents .owl-theme .owl-dots, .contents .owl-theme .owl-nav {
+    text-align: left;
+    -webkit-tap-highlight-color: transparent; }
+
+.sidebar {
+  width: 25%;
+  float: right; }
+
+.maintitle {
+  padding-top: 34px;
+  padding-bottom: 34px; }
+
+.newitems .itemlist {
+  float: left;
+  background-color: #fff;
+  padding: 1.7%;
+  margin: 0.2%; }
+  .newitems .itemlist .details {
+    text-align: center; }
+    .newitems .itemlist .details .text {
+      text-align: left;
+      width: 205px; }
+
+.popular .itemlist {
+  float: left;
+  background-color: #fff;
+  padding: 1.7%;
+  margin: 0.2%; }
+  .popular .itemlist .details {
+    text-align: center; }
+    .popular .itemlist .details .text {
+      text-align: left;
+      width: 205px; }
+
+.delivery {
+  float: left;
+  background-color: #fff;
+  padding: 20px;
+  margin: 2px;
+  width: 42%;
+  height: 264px;
+  text-align: left; }
+  .delivery h2 {
+    color: #887f69; }
+  .delivery h3 {
+    color: #887f69; }
+
+.payment {
+  float: left;
+  background-color: #fff;
+  padding: 20px;
+  margin: 2px;
+  width: 42%;
+  height: 264px;
+  text-align: left; }
+  .payment h2 {
+    color: #887f69; }
+  .payment h3 {
+    color: #887f69; }
+
+.sidebar {
+  width: 220px;
+  height: 93px;
+  background-color: #fff;
+  display: inline; }
+  .sidebar .search {
+    padding: 20px; }
+    .sidebar .search .itemserch {
+      text-align: center; }
+    .sidebar .search .searchspace {
+      background-color: #eee;
+      text-align: left;
+      padding: 11px; }
+      .sidebar .search .searchspace p {
+        display: block;
+        float: left;
+        margin: 0;
+        padding-right: 90px;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 11px;
+        color: #b5b5b5; }
+      .sidebar .search .searchspace img {
+        vertical-align: middle; }
+  .sidebar .navi .pagelink {
+    height: 45px;
+    background-color: #887f69;
+    margin-top: 10px; }
+    .sidebar .navi .pagelink .linkicon {
+      padding-left: 15px;
+      padding-right: 15px;
+      float: left;
+      margin: 0 auto;
+      margin-top: 17px;
+      margin-bottom: 17px; }
+      .sidebar .navi .pagelink .linkicon div {
+        float: right;
+        padding-left: 105px; }
+  .sidebar .navi .categories .categorieswrap {
+    height: 45px;
+    background-color: #887f69;
+    margin-top: 10px; }
+    .sidebar .navi .categories .categorieswrap .categoriesicon {
+      padding-left: 15px;
+      padding-right: 15px;
+      float: left;
+      margin: 0 auto;
+      margin-top: 17px;
+      margin-bottom: 17px; }
+      .sidebar .navi .categories .categorieswrap .categoriesicon div {
+        float: right;
+        padding-left: 92px; }
+  .sidebar .navi .categories .categorieslist {
+    height: 45px;
+    background-color: #fff;
+    margin-top: 1px; }
+    .sidebar .navi .categories .categorieslist p {
+      padding-left: 15px;
+      float: left;
+      margin: 0 auto;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 12px; }
+    .sidebar .navi .categories .categorieslist div {
+      float: right;
+      padding-left: 105px;
+      padding-right: 15px;
+      margin-top: 12px;
+      margin-bottom: 12px; }
+  .sidebar .about {
+    height: 45px;
+    background-color: #887f69;
+    margin-top: 10px; }
+    .sidebar .about .abouticon {
+      padding-left: 15px;
+      padding-right: 15px;
+      float: left;
+      margin: 0 auto;
+      margin-top: 17px;
+      margin-bottom: 17px; }
+    .sidebar .about .aboutimg {
+      clear: both;
+      height: 265px;
+      background-color: #fff;
+      padding: 12px; }
+      .sidebar .about .aboutimg p {
+        font-size: 12px; }
+      .sidebar .about .aboutimg .more {
+        padding-left: 49px;
+        padding-right: 49px;
+        padding-top: 15px; }
+  .sidebar .shopinfo {
+    display: none;
+    clear: both; }
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0; }
+  footer .pagetop {
+    text-align: right;
+    border-bottom: solid 1px #887f69; }
+
+/*# sourceMappingURL=style.css.map */
