@@ -24,25 +24,27 @@ html, body{
 }
 header{
     
+    padding: 40px 0;
+    
     .sp_menu_btn{
         
         display: block;
         text-align:center;
         margin: 0 auto;
         margin-bottom: 15px;
-        padding:0 0;
+        padding: 0 0;
         
          li{
             list-style: none;
             margin: 0;
-            padding:0;
+            padding: 0 4px;
             display: inline-block;
          }
     }
     
     .sp_menu_li{
       width: auto;
-      top:50px;
+      top: 50px;
       border: none;
       background: #ff6d77;
       margin: 0;
@@ -102,7 +104,10 @@ header{
   
   
     @media (max-width: 550px) {
-      .pc_menu{
+      
+      padding: 0 0;      
+      
+      .pc_menu {
         display: none;
       }
       
@@ -122,6 +127,7 @@ header{
   clear: both;
   position: relative;
   min-height: 100%;
+  padding: 10px;
 }
 
 .clearfix::after {
@@ -135,11 +141,12 @@ header{
 
 }
 
-.contents {
+.content {
   display: block;
   width:75%;
   float: left;
   display: inline;
+  margin-top: 40px;
   
   .owl-theme .owl-dots .owl-dot span {
     width: 25px;
@@ -166,9 +173,10 @@ header{
 .sidebar{
   width: 25%;
   float: right;
+  margin-top: 40px;
 }
 
-.maintitle {
+.pc_maintitle {
   padding-top:34px;
   padding-bottom:34px;
   } 
@@ -188,10 +196,26 @@ header{
       .text {
         text-align: left;
         width: 205px;
+        
+        @media (max-width: 550px) {
+          width: 100%;
+        }
+        
       }
     }
     
   }
+  
+  @media (max-width: 550px) {
+    .itemlist{
+      width: 45.6%;
+      margin: 0.5%;
+      
+      img{
+        width: 100%;
+      }
+    }
+  }//max-width: 550px
 
 }//newitems
 
@@ -210,12 +234,28 @@ header{
       .text {
         text-align: left;
         width: 205px;
+        
+        @media (max-width: 550px) {
+          width: 100%;
+        }
+      }
+    
+    }
+  
+  }//itemlist
+  
+  @media (max-width: 550px) {
+    .itemlist{
+      width: 45.6%;
+      margin: 0.5%;
+      
+      img{
+        width: 100%;
       }
     }
-    
-  }
+  }//max-width: 550px  
   
-}//popular
+} //popular
 
 .delivery{
   
@@ -223,7 +263,7 @@ header{
     background-color: #fff;
     padding: 20px;
     margin: 2px;
-    width: 42%;
+    width: 43%;
     height: 264px;
     text-align: left;
     
@@ -243,7 +283,7 @@ header{
     background-color: #fff;
     padding: 20px;
     margin: 2px;
-    width: 42%;
+    width: 43%;
     height: 264px;
     text-align: left;
     
@@ -260,18 +300,36 @@ header{
 
 .sidebar {
   width: 220px;
-  height: 93px;
-  background-color: #fff;
+  
+  
   display: inline;
+  
+    @media (max-width: 550px) {
+      
+      float: left;
+      margin-top: 15px;
+      width: 100%;      
+      
+    }//max-width: 550px
   
   .search{
     
     padding: 20px;
+    background-color: #fff;
     
     .itemserch{
       text-align: center;
       
-    }
+      @media (max-width: 550px) {
+        
+         img{
+          display: none;
+        }
+          
+
+      }//max-width: 550px
+      
+    }//itemserch
     
     .searchspace {
       background-color: #eee;
@@ -287,6 +345,10 @@ header{
         font-style: italic;
         font-size: 11px;
         color: #b5b5b5;
+        
+        @media (max-width: 550px){
+          padding-right: 175px;
+        }//max-width: 550px
 
       }
       
@@ -318,6 +380,10 @@ header{
         div{
           float: right;
           padding-left: 105px;
+          
+          @media (max-width: 550px){
+            padding-left: 186px;
+          }
         }
         
       }
@@ -327,6 +393,7 @@ header{
     .categories{
       
       .categorieswrap{
+        cursor: pointer;
         
         height: 45px;
         background-color: $subcolor;
@@ -343,22 +410,28 @@ header{
           div{
           float: right;
           padding-left: 92px;
+          
+           @media (max-width: 550px){
+            padding-left: 173px;
+          }          
+          
           } 
         }
         
       }
       
-      .categorieslist{
+      .listwrap{
+        .categorieslist{
+        display: none;
         height: 45px;
         background-color: #fff;
-        margin-top: 1px; 
+        margin-top: 2px; 
         
         p{
           padding-left: 15px;
           float: left;
           margin: 0 auto;
-          margin-top:12px;
-          margin-bottom: 12px;
+          margin-top: 12px;
           font-size: 12px;
         }
         
@@ -366,21 +439,20 @@ header{
           float: right;
           padding-left: 105px;
           padding-right: 15px;
-          margin-top:12px;
-          margin-bottom: 12px;
+          margin-top: 15px;
         }          
         
         
-      }//list
+      }//list        
+      }
       
       
     }//categories
     
   } //navi
   
-  .about{
+  .about {
     
-    height: 45px;
     background-color: $subcolor;
     margin-top: 10px; 
     
@@ -390,13 +462,13 @@ header{
       padding-right: 15px;
       float: left;
       margin: 0 auto;
-      margin-top:17px;
+      margin-top: 17px;
       margin-bottom: 17px;
           
     }
     
     .aboutimg{
-      clear:both;
+      clear: both;
       height: 265px;
       background-color: #fff;
       padding: 12px;
@@ -413,12 +485,95 @@ header{
       
     }
     
+    @media (max-width: 550px) {
+      
+      .aboutimg{
+        height: 13%;
+        
+        img{
+          width: 45%;
+          height: auto;
+          padding-right: 5%;
+        }
+        
+        p{
+          width: 50%;
+          float: right;
+          margin: 0 auto;
+        }
+        
+        .more{
+          width: 80%;
+          height: auto;
+          padding-left: 50%;
+        }
+      }
+      
+    } //max-width: 550px    
+    
   }//about
   
-  .shopinfo{
-    display: none;
-    clear:both; 
-  }
+  .shopinfo {
+    
+    background-color: $subcolor;
+    margin-top: 10px; 
+    
+    .infoicon{
+      
+      padding-left: 15px;
+      padding-right: 15px;
+      float: left;
+      margin: 0 auto;
+      margin-top:17px;
+      margin-bottom: 17px;
+          
+    }
+    
+    .shopinfoimg{
+      clear: both;
+      height: 265px;
+      background-color: #fff;
+      padding: 12px;
+      
+      p{
+        font-size: 12px;
+      }
+      
+      .more{
+        padding-left: 49px;
+        padding-right: 49px;
+        padding-top: 15px;
+      }      
+      
+    }
+    
+    @media (max-width: 550px) {
+      
+      .shopinfoimg{
+        height: 13%;
+        
+        img{
+          width: 45%;
+          height: auto;
+          padding-right: 5%;
+        }
+        
+        p{
+          width: 50%;
+          float: right;
+          margin: 0 auto;
+        }
+        
+        .more{
+          width: 80%;
+          height: auto;
+          padding-left: 50%;
+        }
+      }
+      
+    } //max-width: 550px    
+    
+  }//shopinfo
   
 
   
@@ -427,11 +582,90 @@ header{
 footer{
     display: block;
     position: absolute;
-    bottom: 0;  
+    bottom: auto; 
+    width: 960px;
+    margin: 60px auto;
+    text-align: center;
 
   .pagetop{
     text-align: right;
-    border-bottom: solid 1px $subcolor;
+    padding-bottom: 20px;
   }
   
+  .foot_navi{
+    
+    padding: 30px 0;
+    border-top: solid 1px $subcolor;
+    font-size: 12px;
+    
+  }
+  
+  small{
+    color: #b8b4ac;
+  }
+  
+  @media (max-width: 550px) {
+    
+    width: 100%;
+    margin-top: 10px;
+    
+    .pagetop{
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    
+    .foot_navi{
+      padding: 10px 0;
+      width: 92%;
+      margin: 0 auto;
+    }
+    
+  }// max-width: 550px
+  
 } //footer
+
+
+@media (max-width: 550px) {
+  .pc_maintitle {
+     display: none;
+  }
+  
+  .sp_maintitle{
+    padding: 15px;
+   }  
+  
+  
+  .banner{
+    max-width:100%;
+  }
+  
+  .content{
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .delivery{
+    padding: 1% 6%;
+    width: 87%;
+    height: 225px;
+  }
+  
+  .payment{
+    padding: 1% 6%;
+    width: 87%;
+    
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+} //max-width: 550px
+
+@media (min-width: 551px) {
+  .sp_maintitle{
+    display: none;
+  }
+
+} //min-width: 551px
