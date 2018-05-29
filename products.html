@@ -29,6 +29,17 @@
     <script  type="text/javascript">
    
      $(document).ready(function(){
+      $("#sp_icon").click(function(){
+      $(".sp_menu_toggle").slideToggle();
+    });
+    });
+  
+   </script>
+   
+    <!-- カテゴリーメニュー -->
+    <script  type="text/javascript">
+   
+     $(document).ready(function(){
       $(".categorieswrap").click(function(){
       $(".listwrap").slideToggle();
     });
@@ -95,21 +106,20 @@
               
                 <div class="menu">
                
-                    <div class="sp_menu">
+                  <div class="sp_menu">
                       <ul class="sp_menu_btn">
-                      <li><img src="images/top_sp/fb.png" alt="sp_fb" srcset="images/top_sp/fb@2x.png 2x" /></li>
-                      <li><img src="images/top_sp/insta.png" alt="sp_insta" srcset="images/top_sp/insta@2x.png 2x" /></li>
-                      <li><img src="images/top_sp/menu_icon.png" alt="sp_menu" srcset="images/top_sp/menu_icon@2x.png 2x" /></li>
-                    </ul>
-                    
-                      <ul class="sp_menu_li">
+                        <li><img src="images/top_sp/fb.png" alt="sp_fb" srcset="images/top_sp/fb@2x.png 2x" /></li>
+                        <li><img src="images/top_sp/insta.png" alt="sp_insta" srcset="images/top_sp/insta@2x.png 2x" /></li>
+                        <li id="sp_icon"><img src="images/top_sp/menu_icon.png" alt="sp_menu" srcset="images/top_sp/menu_icon@2x.png 2x" /></li>
+                      </ul>
+                    <ul class="sp_menu_toggle">
                       <li><a href="#">ログイン</a></li>
                       <li><a href="#">カート</a></li>
                       <li><a href="#">マイページ</a></li>
                       <li><a href="#">ショッピングガイド</a></li>
                     </ul>
-                    </div>
-                    <!-- sp_menu -->
+                  </div>
+                  <!-- sp_menu -->
               
                     <div class="pc_menu">
                        <ul>
@@ -295,7 +305,7 @@
                     
                     <div class="delivery">
                       <h2>お届けについて</h2>
-                      <img src="./images/top/otodoke_banner.png" alt="合計5,000円以上で送料無料"></li>
+                      <img src="./images/top/otodoke_banner.png" alt="合計5,000円以上で送料無料">
                       <h3>■〇〇運輸</h3>
                       <p>送料 ¥000円</p>
                       <h3>■ゆうパケット</h3>

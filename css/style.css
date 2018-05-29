@@ -12,8 +12,7 @@ html, body {
 #wrap {
   clear: both;
   position: relative;
-  min-height: 100%;
-  padding: 10px; }
+  min-height: 100%; }
 
 .clearfix::after {
   content: '';
@@ -21,7 +20,8 @@ html, body {
   clear: both; }
 
 .main {
-  text-align: center; }
+  text-align: center;
+  padding: 10px; }
   .main header {
     padding: 40px 0; }
     .main header .sp_menu_btn {
@@ -35,7 +35,7 @@ html, body {
         margin: 0;
         padding: 0 4px;
         display: inline-block; }
-    .main header .sp_menu_li {
+    .main header .sp_menu_toggle {
       width: auto;
       top: 50px;
       border: none;
@@ -43,11 +43,11 @@ html, body {
       margin: 0;
       padding: 0;
       display: none; }
-      .main header .sp_menu_li li {
+      .main header .sp_menu_toggle li {
         list-style: none;
         margin: 0;
         padding: 0; }
-        .main header .sp_menu_li li a {
+        .main header .sp_menu_toggle li a {
           color: #fff;
           display: block;
           padding: 10px 8px;
@@ -84,7 +84,9 @@ html, body {
           text-align: center;
           margin: 0 auto;
           margin-top: 30px;
-          margin-bottom: 25px; } }
+          margin-bottom: 25px; }
+        .main header .sp_menu_toggle {
+          width: 100%; } }
   .main .content {
     display: block;
     width: 75%;
@@ -115,6 +117,9 @@ html, body {
       background-color: #fff;
       padding: 1.7%;
       margin: 0.2%; }
+      .main .content .newitems .itemlist a {
+        text-decoration: none;
+        color: #000; }
       .main .content .newitems .itemlist .details {
         text-align: center; }
         .main .content .newitems .itemlist .details .text {
@@ -206,7 +211,8 @@ html, body {
     .sidebar {
       float: left;
       margin-top: 15px;
-      width: 100%; } }
+      width: 93.5%;
+      padding: 0 10px; } }
   .sidebar .search {
     padding: 20px;
     background-color: #fff; }
@@ -266,7 +272,7 @@ html, body {
         float: right; }
         @media (max-width: 550px) {
           .sidebar .navi .categories .categorieswrap .categoriesicon .wrap {
-            padding-left: 173px; } }
+            padding-left: 172px; } }
   .sidebar .navi .categories .listwrap .categorieslist {
     height: 45px;
     background-color: #fff;

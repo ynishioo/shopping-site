@@ -30,7 +30,7 @@ html, body{
   clear: both;
   position: relative;
   min-height: 100%;
-  padding: 10px;
+  
 }
 
 .clearfix::after {
@@ -41,6 +41,7 @@ html, body{
 
 .main{
   text-align: center;
+  padding: 10px;
   
   header{
     
@@ -62,7 +63,7 @@ html, body{
          }
     }
     
-    .sp_menu_li{
+    .sp_menu_toggle{
       width: auto;
       top: 50px;
       border: none;
@@ -131,13 +132,17 @@ html, body{
         display: none;
       }
       
-    .logo{
+      .logo{
         display: block;
         text-align:center;
         margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 25px;
     }
+    
+      .sp_menu_toggle{
+        width: 100%;
+      }
     
     }// max-width: 550px
 
@@ -188,10 +193,15 @@ html, body{
   .newitems {
   
     .itemlist {
-    float:left;
-    background-color: #fff;
-    padding: 1.7%;
-    margin: 0.2%;
+      float:left;
+      background-color: #fff;
+      padding: 1.7%;
+      margin: 0.2%;
+      
+      a {
+        text-decoration: none;
+        color: #000;
+      }
     
     .details {
       text-align: center;
@@ -363,7 +373,8 @@ html, body{
       
       float: left;
       margin-top: 15px;
-      width: 100%;      
+      width: 93.5%;
+      padding: 0 10px;      
       
     }//max-width: 550px
     
@@ -471,7 +482,7 @@ html, body{
           float: right;
           
            @media (max-width: 550px){
-            padding-left: 173px;
+            padding-left: 172px;
           }          
           
           } 
